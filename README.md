@@ -16,4 +16,16 @@ This repository reproduces the key predictions of V6.1:
 ```bash
 pip install -r requirements.txt
 python parity_restoration.py
-python strong_parity_density.py
+python strong_parity_density.py## For Experimentalists: How to Test This Theory
+
+### Prediction 1: CMB Low-Frequency Cutoff
+- **What to measure**: Intensity at ν < 10.2 MHz
+- **Success criterion**: Deficit ≥ 35 dB at 1 MHz
+- **Verification timeline**: FARSIDE lunar telescope (2029-2031)
+- **Contact**: [Link to FARSIDE team proposal guidelines]
+
+### Prediction 2: Measurement-Induced Deficit
+- **What to measure**: Anomalous thermal noise in quantum sensors
+- **Success criterion**: δ_new ∝ g² scaling (quadratic with coupling)
+- **Verification timeline**: LIGO O4 quantum squeezing upgrade (2027+)
+- **Contact**: [Link to LIGO quantum metrology working group]

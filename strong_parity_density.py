@@ -63,7 +63,7 @@ def main():
     print(f"   Critical density ratio = {RHO_CRIT} ρ_0")
     print(f"   Baseline chirality gap Δχ_0 = {DELTA_CHI_0} GeV")
     print(f"   Density scaling exponent α = {ALPHA}")
-    print(f"\n   At ρ = 8 ρ_0: P = {parity_violation_strength(8*RHO_0)[0]:.3f}")
+    print(f"\n   At ρ = 8 ρ_0: P = {parity_violation_strength(np.array([8*RHO_0]))[0]:.3f}")
     print(f"   (Observable in neutron star mergers / heavy-ion collisions)")
     
     # Create figure
@@ -100,4 +100,12 @@ def main():
     
     # Save figure
     os.makedirs('figures', exist_ok=True)
-    output_path = 'figures/s
+    output_path = 'figures/strong_parity.png'
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
+    print(f"\n📈 Figure saved to: {output_path}")
+    
+    plt.show()
+    print("\n✅ Validation complete.")
+
+if __name__ == '__main__':
+    main()

@@ -1,9 +1,3 @@
-
----
-
-### 2. `parity_restoration.py`
-
-```python
 #!/usr/bin/env python3
 """
 Parity Restoration in Weak Interactions at High Energy

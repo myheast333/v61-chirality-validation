@@ -100,12 +100,4 @@ def main():
     
     # Save figure
     os.makedirs('figures', exist_ok=True)
-    output_path = 'figures/strong_parity.png'
-    plt.savefig(output_path, dpi=150, bbox_inches='tight')
-    print(f"\n📈 Figure saved to: {output_path}")
-    
-    plt.show()
-    print("\n✅ Validation complete.")
-
-if __name__ == '__main__':
-    main()
+    output_path = 'figures/s
